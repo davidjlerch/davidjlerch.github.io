@@ -1,21 +1,270 @@
-David L. | Personal Portfolio
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David L. | Personal Website</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #24292f;
+            --text-muted: #57606a;
+            --link-color: #0969da;
+            --link-hover: #0550ae;
+            --border-color: #d0d7de;
+            --accent-bg: #f6f8fa;
+        }
 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
 
-    David L.
-    Researcher & Professional
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 60px;
+        }
 
-    
-        Google Scholar
-        LinkedIn
-    
+        aside {
+            position: sticky;
+            top: 60px;
+            height: fit-content;
+        }
 
-    
-        About Me
-        Welcome to my personal page! You can edit this paragraph directly inside your index.html file to introduce your research background, core skills, or current professional projects.
-    
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #e1e4e8;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+        }
 
-    
-        Featured Publications
-        Highlight your most impactful papers, books, or conference presentations here. Visitors can click the Google Scholar button above to see your full citation history.
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .contact-links {
+            list-style: none;
+        }
+
+        .contact-links li {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .contact-links a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        section h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 16px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-color);
+        }
+
+        .news-list {
+            list-style: none;
+        }
+
+        .news-list li {
+            margin-bottom: 12px;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .date {
+            font-weight: 600;
+            color: var(--text-muted);
+            min-width: 85px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .pub-item {
+            margin-bottom: 20px;
+        }
+
+        .pub-title {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .pub-authors {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .pub-authors .me {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .pub-venue {
+            font-size: 0.95rem;
+            font-style: italic;
+            color: var(--text-muted);
+        }
+
+        .pub-links {
+            margin-top: 5px;
+        }
+
+        .pub-links a {
+            font-size: 0.85rem;
+            color: var(--link-color);
+            text-decoration: none;
+            margin-right: 12px;
+            border: 1px solid var(--border-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            background-color: var(--accent-bg);
+        }
+
+        .pub-links a:hover {
+            background-color: var(--border-color);
+            color: var(--link-hover);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 40px 20px;
+            }
+
+            aside {
+                position: relative;
+                top: 0;
+                text-align: center;
+                border-bottom: 1px solid var(--border-color);
+                padding-bottom: 30px;
+                margin-bottom: 20px;
+            }
+
+            .profile-img {
+                margin: 0 auto 20px auto;
+            }
+
+            .news-list li {
+                flex-direction: column;
+                gap: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <aside>
+            <img src="avatar.jpg" alt="David L." class="profile-img" onerror="this.style.display='none'">
+            <h1>David L.</h1>
+            <div class="title">Researcher / Engineer</div>
+            
+            <ul class="contact-links">
+                <li><a href="https://scholar.google.com/citations?user=BDOfyn8AAAAJ&hl=de" target="_blank">Google Scholar</a></li>
+                <li><a href="https://www.linkedin.com/in/davidl9781171a2" target="_blank">LinkedIn</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    I am a researcher specializing in my field. This layout is designed to mirror minimal academic style websites, giving your visitors a concise, clear overview of your professional profile, history, and achievements without unnecessary clutter.
+                </p>
+                <p>
+                    You can describe your current research interests, affiliations, or industry projects right here.
+                </p>
+            </section>
+
+            <section id="news">
+                <h2>News</h2>
+                <ul class="news-list">
+                    <li>
+                        <span class="date">Jun 2026</span>
+                        <span>Our latest paper has been accepted at a major conference!</span>
+                    </li>
+                    <li>
+                        <span class="date">Jan 2026</span>
+                        <span>Started a new collaboration or research position.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="publications">
+                <h2>Publications</h2>
+                
+                <div class="pub-item">
+                    <div class="pub-title">A Highly Visual Title of Your Primary Research Paper</div>
+                    <div class="pub-authors"><span class="me">David L.</span>, Jane Doe, and John Smith</div>
+                    <div class="pub-venue">International Journal of Computer Science, 2026</div>
+                    <div class="pub-links">
+                        <a href="https://scholar.google.com/citations?user=BDOfyn8AAAAJ&hl=de" target="_blank">Publisher Site</a>
+                        <a href="#">PDF</a>
+                        <a href="#">Code</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-title">Another Dynamic Contribution to the Field of Engineering</div>
+                    <div class="pub-authors">Jane Doe and <span class="me">David L.</span></div>
+                    <div class="pub-venue">IEEE Transactions, 2025</div>
+                    <div class="pub-links">
+                        <a href="https://scholar.google.com/citations?user=BDOfyn8AAAAJ&hl=de" target="_blank">Publisher Site</a>
+                        <a href="#">PDF</a>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
