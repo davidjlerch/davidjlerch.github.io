@@ -3,7 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David L. | Personal Website</title>
+    
+    <!-- 1. HUMAN SEO: Browser Title & Meta Description -->
+    <title>David Lerch | Personal Academic Website</title>
+    <meta name="description" content="Personal portfolio and academic publications of David Lerch, researcher in Computer Vision, Driver Activity Recognition, and Human-AI Interaction.">
+    <meta name="keywords" content="David Lerch, Computer Vision, Driver Activity Recognition, Human-AI Interaction, Machine Learning Researcher, ITSC, WACV">
+    <meta name="author" content="David Lerch">
+
+    <!-- 2. SOCIAL MEDIA: Open Graph (Makes your link look professional when shared on LinkedIn) -->
+    <meta property="og:title" content="David Lerch | Personal Website">
+    <meta property="og:description" content="Explore research publications and professional profile of David Lerch.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://davidjlerch.github.io/">
+    <!-- Optional: Add a preview image url if you upload one to your repo -->
+    <!-- <meta property="og:image" content="https://yourusername.github.io/avatar.jpg"> -->
+
+    <!-- 3. AI & LLM OPTIMIZATION: JSON-LD Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "David Lerch",
+      "givenName": "David",
+      "familyName": "Lerch",
+      "jobTitle": "Researcher / Computer Vision Engineer",
+      "url": "https://davidjlerch.github.io/",
+      "sameAs": [
+        "https://scholar.google.com/citations?user=BDOfyn8AAAAJ&hl",
+        "https://www.linkedin.com/in/davidl9781171a2"
+      ],
+      "knowsAbout": [
+        "Computer Vision",
+        "Driver Activity Recognition",
+        "Human-AI Interaction",
+        "Self-supervised Learning",
+        "Intelligent Transportation Systems"
+      ]
+    }
+    </script>
+
     <style>
         :root {
             --bg-color: #ffffff;
@@ -15,6 +53,7 @@
             --accent-bg: #f6f8fa;
         }
 
+        /* Standard CSS Reset */
         * {
             box-sizing: border-box;
             margin: 0;
